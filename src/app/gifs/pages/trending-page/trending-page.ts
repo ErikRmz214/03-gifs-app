@@ -1,6 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { List } from "../../components/list/list";
+import { gifService } from '../../services/gif';
 
+/*
 const imageUrls: string[] = [
     "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
     "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
@@ -15,6 +17,7 @@ const imageUrls: string[] = [
     "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg",
     "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
 ];
+*/
 
 @Component({
   selector: 'app-trending-page',
@@ -23,5 +26,10 @@ const imageUrls: string[] = [
 })
 
 export default class TrendingPage {
-gifs = signal(imageUrls);
+
+  //gifs = computed( () => this.gifService.trendingGifs() );
+
+//agregado nuevo
+gifService = inject(gifService);
+
  }
