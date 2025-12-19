@@ -1,6 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { List } from "../../components/list/list";
-import { gifService } from '../../services/gif';
+import { gifService } from '../../services/gif.service';
 
 /*
 const imageUrls: string[] = [

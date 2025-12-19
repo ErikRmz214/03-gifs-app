@@ -13,7 +13,7 @@ export interface giphyItem {
   bitly_url:                  string;
   embed_url:                  string;
   username:                   string;
-  source:                     string;
+  source:                     string; 
   title:                      string;
   rating:                     Rating;
   content_url:                string;

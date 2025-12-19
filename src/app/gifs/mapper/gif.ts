@@ -15,4 +15,3 @@ export class gifMapper {
 
   }
 }
-//todo es nuevo
