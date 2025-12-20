@@ -13,7 +13,7 @@ export interface giphyItem {
   bitly_url:                  string;
   embed_url:                  string;
   username:                   string;
-  source:                     string; 
+  source:                     string;
   title:                      string;
   rating:                     Rating;
   content_url:                string;
@@ -22,7 +22,7 @@ export interface giphyItem {
   source_caption?:            string;
   is_sticker:                 number;
   import_datetime:            Date;
-  trending_datetime:          Date | TrendingDatetimeEnum;
+  trending_datetime:          Date | TrendingDatetimeEnum; 
   images:                     Images;
   user?:                      User;
   analytics_response_payload: string;
